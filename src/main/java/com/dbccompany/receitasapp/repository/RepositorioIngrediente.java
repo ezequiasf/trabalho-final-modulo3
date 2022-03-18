@@ -2,6 +2,7 @@ package com.dbccompany.receitasapp.repository;
 
 import com.dbccompany.receitasapp.entity.Ingrediente;
 import com.dbccompany.receitasapp.exceptions.ObjetoNaoEncontradoException;
+import com.dbccompany.receitasapp.utils.Validar;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Repository
-public class RepositorioIngrediente implements RepositorioGenerico<Ingrediente, Integer> {
+public class RepositorioIngrediente implements RepositorioGenerico<Ingrediente, Integer>, Validar<Ingrediente, Integer> {
 
     private final List<Ingrediente> ingredientesBanco = new ArrayList<>();
     private final AtomicInteger COUNTER = new AtomicInteger();
@@ -40,31 +41,47 @@ public class RepositorioIngrediente implements RepositorioGenerico<Ingrediente, 
                 .nome("Alho")
                 .quantidade("2 un")
                 .build();
-        ingredientesBanco.addAll(Arrays.asList(i1,i2,i3,i4));
+        ingredientesBanco.addAll(Arrays.asList(i1, i2, i3, i4));
     }
 
     @Override
     public List<Ingrediente> lerTodos() {
-        return null;
+        return ingredientesBanco;
     }
 
     @Override
-    public Ingrediente encontrarPorId(Integer integer) throws ObjetoNaoEncontradoException {
-        return null;
+    public Ingrediente encontrarPorId(Integer idIngrediente) throws ObjetoNaoEncontradoException {
+        return seExistirRetorne(idIngrediente);
     }
 
     @Override
     public Ingrediente salvar(Ingrediente ingrediente) {
-        return null;
+        ingrediente.setId(COUNTER.incrementAndGet());
+        ingredientesBanco.add(ingrediente);
+        return ingrediente;
     }
 
     @Override
-    public Ingrediente atualizar(Ingrediente ingrediente, Integer integer) throws ObjetoNaoEncontradoException {
-        return null;
+    public Ingrediente atualizar(Ingrediente ingrediente, Integer idIngrediente) throws ObjetoNaoEncontradoException {
+        Ingrediente i = seExistirRetorne(idIngrediente);
+        i.setNome(ingrediente.getNome());
+        i.setQuantidade(ingrediente.getQuantidade());
+        return i;
     }
 
     @Override
-    public Ingrediente deletar(Integer integer) throws ObjetoNaoEncontradoException {
-        return null;
+    public Ingrediente deletar(Integer idIngrediente) throws ObjetoNaoEncontradoException {
+        Ingrediente i = seExistirRetorne(idIngrediente);
+        ingredientesBanco.remove(i);
+        return i;
+    }
+
+    @Override
+    public Ingrediente seExistirRetorne(Integer idIngrediente) throws ObjetoNaoEncontradoException {
+        return ingredientesBanco.stream()
+                .filter(ingrediente -> ingrediente.getId().equals(idIngrediente))
+                .findFirst()
+                .orElseThrow(
+                        () -> new ObjetoNaoEncontradoException("Não existe ingrediente registrado no banco com este id."));
     }
 }
