@@ -76,7 +76,7 @@ public class RepositorioNota implements RepositorioGenerico<Nota, Integer>, Vali
                     .filter(nota -> nota.getIdReceita().equals(id))
                     .collect(Collectors.toList());
             if (notas.isEmpty()) {
-                throw new ObjetoNaoEncontradoException("A receita informada ainda não tem nenhuma classificação.");
+                throw new ObjetoNaoEncontradoException("A receita informada ainda não tem nenhuma classificação ou não existe.");
             }
             return notas;
         };
