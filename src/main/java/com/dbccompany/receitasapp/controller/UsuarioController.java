@@ -3,46 +3,45 @@ package com.dbccompany.receitasapp.controller;
 
 import com.dbccompany.receitasapp.dto.UsuarioDTO;
 import com.dbccompany.receitasapp.dto.UsuarioFormado;
-import com.dbccompany.receitasapp.service.ServiceUsuario;
-import jdk.dynalink.linker.LinkerServices;
+import com.dbccompany.receitasapp.exceptions.ObjetoNaoEncontradoException;
+import com.dbccompany.receitasapp.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
-@RestController("/Usuario")
+@RestController
+@RequestMapping("/usuario")
 public class UsuarioController {
 
     @Autowired
-    private ServiceUsuario serviceUsuario;
+    private UsuarioService serviceUsuario;
 
     @GetMapping("/listarUsuarios")
-    public List<UsuarioFormado> listarTodosUsuarios(){
+    public List<UsuarioFormado> listarTodosUsuarios() {
         return serviceUsuario.listarTodosUsuarios();
     }
 
     @GetMapping("/{idUsuario}")
-    public UsuarioFormado encontrarUsuarioPorId(Integer idUsuario){
-        return  serviceUsuario.encontrarUsuarioPorId(idUsuario);
+    public UsuarioFormado encontrarUsuarioPorId(@PathVariable("idUsuario") Integer idUsuario) throws ObjetoNaoEncontradoException {
+        return serviceUsuario.encontrarUsuarioPorId(idUsuario);
     }
 
-    @PostMapping
-    public UsuarioFormado criar(@RequestBody UsuarioDTO usuarioDTO){
-        return serviceUsuario.criarUsuario(usuarioDTO);
+    @PostMapping("/salvar")
+    public UsuarioFormado salvarUsuario(@Valid @RequestBody UsuarioDTO usuarioDTO) {
+        return serviceUsuario.salvarUsuario(usuarioDTO);
     }
 
-    @PutMapping("{idUsuario")
+    @PutMapping("/atualizar/{idUsuario}")
     public UsuarioFormado atualizarUsuario(@PathVariable("idUsuario") Integer idUsuario,
-                                           @RequestBody UsuarioDTO usuarioAtualizar){
+                                           @Valid @RequestBody UsuarioDTO usuarioAtualizar) throws ObjetoNaoEncontradoException {
         return serviceUsuario.atualizarUsuario(usuarioAtualizar, idUsuario);
     }
 
-    @DeleteMapping("{idUsuario")
-    public UsuarioFormado deletarUsuario(@PathVariable ("idUsuario") Integer idUsuario){
+    @DeleteMapping("/deletar/{idUsuario}")
+    public UsuarioFormado deletarUsuario(@PathVariable("idUsuario") Integer idUsuario) throws ObjetoNaoEncontradoException {
         return serviceUsuario.deletarUsuario(idUsuario);
     }
-
-
-
 
 }
