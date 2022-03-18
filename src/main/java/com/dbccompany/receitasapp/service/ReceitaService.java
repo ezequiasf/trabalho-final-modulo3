@@ -1,9 +1,7 @@
 package com.dbccompany.receitasapp.service;
 import com.dbccompany.receitasapp.dto.ReceitaDTO;
 import com.dbccompany.receitasapp.dto.ReceitaFormada;
-import com.dbccompany.receitasapp.entity.Receita;
 import com.dbccompany.receitasapp.repository.RepositorioReceita;
-import com.dbccompany.receitasapp.utils.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
