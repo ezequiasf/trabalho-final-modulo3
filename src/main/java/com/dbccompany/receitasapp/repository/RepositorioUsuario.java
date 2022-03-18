@@ -64,7 +64,7 @@ public class RepositorioUsuario implements RepositorioGenerico<Usuario, Integer>
     @Override
     public Usuario deletar(Integer idUser) throws ObjetoNaoEncontradoException {
         Usuario usuarioDeletado = seExistirRetorne(idUser);
-        usuariosBanco.remove(idUser);
+        usuariosBanco.remove(idUser.intValue());
         return usuarioDeletado;
     }
 
