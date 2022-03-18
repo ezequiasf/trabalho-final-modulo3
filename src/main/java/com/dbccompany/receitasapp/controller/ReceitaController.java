@@ -5,6 +5,7 @@ import com.dbccompany.receitasapp.dto.ReceitaFormada;
 import com.dbccompany.receitasapp.exceptions.ObjetoNaoEncontradoException;
 import com.dbccompany.receitasapp.service.ReceitaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -33,11 +34,13 @@ public class ReceitaController {
     }
 
     @PostMapping("/salvar/{idUsuario}")
-    public ReceitaFormada salvarReceita(@Valid @RequestBody ReceitaDTO receitaDTO,@PathVariable("idUsuario") Integer idUsuario) {
+    @Validated
+    public ReceitaFormada salvarReceita(@Valid @RequestBody ReceitaDTO receitaDTO, @PathVariable("idUsuario") Integer idUsuario) {
         return receitaService.salvarReceita(receitaDTO, idUsuario);
     }
 
     @PutMapping("/atualizar/{idReceita}")
+    @Validated
     public ReceitaFormada atualizarReceita(@PathVariable("idReceita") Integer idReceita,
                                            @Valid @RequestBody ReceitaDTO receitaAtualizar) throws ObjetoNaoEncontradoException {
         return receitaService.atualizarReceita(receitaAtualizar, idReceita);
@@ -47,6 +50,5 @@ public class ReceitaController {
     public ReceitaFormada deletarReceita(@PathVariable("idReceita") Integer idReceita) throws ObjetoNaoEncontradoException {
         return receitaService.deletarReceita(idReceita);
     }
-
 
 }

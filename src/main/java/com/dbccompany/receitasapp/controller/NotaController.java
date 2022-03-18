@@ -5,6 +5,7 @@ import com.dbccompany.receitasapp.dto.NotaFormada;
 import com.dbccompany.receitasapp.exceptions.ObjetoNaoEncontradoException;
 import com.dbccompany.receitasapp.service.NotaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -33,11 +34,13 @@ public class NotaController {
     }
 
     @PostMapping("/salvar/{idUsuario}")
+    @Validated
     public NotaFormada salvarNota(@Valid @RequestBody NotaDTO notaDto, @PathVariable("idUsuario") Integer idUsuario) {
         return notaService.salvar(notaDto, idUsuario);
     }
 
     @PutMapping("/atualizar/{idNota}")
+    @Validated
     public NotaFormada atualizarNota(@Valid @RequestBody NotaDTO notaDto, @PathVariable("idNota") Integer idNota) throws ObjetoNaoEncontradoException {
         return notaService.atualizar(notaDto, idNota);
     }

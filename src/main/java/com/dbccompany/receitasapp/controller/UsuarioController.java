@@ -6,6 +6,7 @@ import com.dbccompany.receitasapp.dto.UsuarioFormado;
 import com.dbccompany.receitasapp.exceptions.ObjetoNaoEncontradoException;
 import com.dbccompany.receitasapp.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -29,11 +30,13 @@ public class UsuarioController {
     }
 
     @PostMapping("/salvar")
+    @Validated
     public UsuarioFormado salvarUsuario(@Valid @RequestBody UsuarioDTO usuarioDTO) {
         return serviceUsuario.salvarUsuario(usuarioDTO);
     }
 
     @PutMapping("/atualizar/{idUsuario}")
+    @Validated
     public UsuarioFormado atualizarUsuario(@PathVariable("idUsuario") Integer idUsuario,
                                            @Valid @RequestBody UsuarioDTO usuarioAtualizar) throws ObjetoNaoEncontradoException {
         return serviceUsuario.atualizarUsuario(usuarioAtualizar, idUsuario);

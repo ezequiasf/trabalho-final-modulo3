@@ -5,6 +5,7 @@ import com.dbccompany.receitasapp.dto.ComentarioFormado;
 import com.dbccompany.receitasapp.exceptions.ObjetoNaoEncontradoException;
 import com.dbccompany.receitasapp.service.ComentarioService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -33,11 +34,13 @@ public class ComentarioController {
     }
 
     @PostMapping("/salvar/{idUsuario}")
+    @Validated
     public ComentarioFormado salvarComentario(@Valid @RequestBody ComentarioDTO comentarioDTO, @PathVariable("idUsuario") Integer idUsuario) {
         return comentarioService.salvar(comentarioDTO, idUsuario);
     }
 
     @PutMapping("/atualizar/{idComentario}")
+    @Validated
     public ComentarioFormado atualizarComentario(@Valid @RequestBody ComentarioDTO comentarioDTO, @PathVariable("idComentario") Integer idComentario) throws ObjetoNaoEncontradoException {
         return comentarioService.atualizar(comentarioDTO, idComentario);
     }
