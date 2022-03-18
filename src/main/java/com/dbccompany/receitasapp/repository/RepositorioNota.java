@@ -52,6 +52,7 @@ public class RepositorioNota implements RepositorioGenerico<Nota, Integer>, Vali
     @Override
     public Nota atualizar(Nota nota, Integer idNota) throws ObjetoNaoEncontradoException {
         Nota n = seExistirRetorne(idNota);
+        n.setIdReceita(nota.getIdReceita());
         n.setClassificacao(nota.getClassificacao());
         return n;
     }

@@ -53,6 +53,7 @@ public class RepositorioComentario implements RepositorioGenerico<Comentario, In
     @Override
     public Comentario atualizar(Comentario comentario, Integer idComentario) throws ObjetoNaoEncontradoException {
         Comentario c = seExistirRetorne(idComentario);
+        c.setIdReceita(comentario.getIdReceita());
         c.setComentario(comentario.getComentario());
         return c;
     }
