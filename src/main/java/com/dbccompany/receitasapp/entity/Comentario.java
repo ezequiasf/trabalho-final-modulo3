@@ -23,6 +23,6 @@ public class Comentario {
 
     @ToString.Include
     @NotBlank(message = "O comentário deve ser informado.")
-    @Size(min = 5, max = 200, message = "O comentário deve ter no mínimo 5 caracteres e no máximo 200.")
+    @Size(min = 1, max = 200, message = "O comentário deve ter no mínimo 1 caracter e no máximo 200.")
     private String comentario;
 }

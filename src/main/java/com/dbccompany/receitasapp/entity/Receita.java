@@ -21,17 +21,17 @@ public class Receita {
 
     @NotBlank(message = "O nome da receita deve ser informado.")
     @Size(min = 2, max = 15, message = "O nome da receita deve estar entre 2 e 15 caracteres.")
-    @ToString.Include(name = "Receita")
+    @ToString.Include(name = "nome")
     private String nomeReceita;
 
-    @ToString.Include(name = "receita")
-    private String tipoReceita = "Não informado.";
+    @ToString.Include(name = "tipo")
+    private String tipoReceita;
 
     @ToString.Include(name = "refeição")
-    private String tipoRefeicao = "Não informado";
+    private String tipoRefeicao;
 
     @NotBlank(message = "O modo de preparo deve ser informado.")
-    @Size(min = 15, max = 300, message = "O nome da receita deve estar entre 15 e 300 caracteres.")
+    @Size(min = 15, max = 300, message = "O modo de preparo deve estar entre 15 e 300 caracteres.")
     @ToString.Include(name = "preparo")
     private String modoPreparo;
 
