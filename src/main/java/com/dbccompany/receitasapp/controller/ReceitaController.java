@@ -2,58 +2,51 @@ package com.dbccompany.receitasapp.controller;
 
 import com.dbccompany.receitasapp.dto.ReceitaDTO;
 import com.dbccompany.receitasapp.dto.ReceitaFormada;
+import com.dbccompany.receitasapp.exceptions.ObjetoNaoEncontradoException;
 import com.dbccompany.receitasapp.service.ReceitaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
-
-@RestController("/Receita")
+@RestController
+@RequestMapping("/receita")
 public class ReceitaController {
 
     @Autowired
     private ReceitaService receitaService;
 
     @GetMapping("/listarReceitas")
-    public List<ReceitaFormada> listarTodasReceitas(){
+    public List<ReceitaFormada> listarTodasReceitas() {
         return receitaService.listarTodasReceitas();
     }
 
     @GetMapping("/{idReceita}")
-    public ReceitaFormada listarReceitaPorId(){
-        return receitaService.listarReceitaPorId();
+    public ReceitaFormada listarReceitaPorId(@PathVariable("idReceita") Integer idReceita) throws ObjetoNaoEncontradoException {
+        return receitaService.encontrarPorId(idReceita);
     }
 
     @GetMapping("/usuario/{idUsuario}")
-    public List<ReceitaFormada> listarReceitasPorUsuario(Integer idUsuario){
+    public List<ReceitaFormada> listarReceitasPorUsuario(@PathVariable("idUsuario") Integer idUsuario) throws ObjetoNaoEncontradoException {
         return receitaService.listarReceitarPorUsuario(idUsuario);
     }
 
-    @PostMapping
-    public ReceitaFormada criar(@RequestBody ReceitaDTO receitaDTO){
-        return receitaService.criar(receitaDTO);
+    @PostMapping("/salvar/{idUsuario}")
+    public ReceitaFormada salvarReceita(@Valid @RequestBody ReceitaDTO receitaDTO,@PathVariable("idUsuario") Integer idUsuario) {
+        return receitaService.salvarReceita(receitaDTO, idUsuario);
     }
 
-    @PutMapping("/{idReceita}")
-    public ReceitaFormada atualizarReceita(@PathVariable ("idReceita") Integer idReceita,
-                                           @RequestBody ReceitaDTO receitaAtualizar){
+    @PutMapping("/atualizar/{idReceita}")
+    public ReceitaFormada atualizarReceita(@PathVariable("idReceita") Integer idReceita,
+                                           @Valid @RequestBody ReceitaDTO receitaAtualizar) throws ObjetoNaoEncontradoException {
         return receitaService.atualizarReceita(receitaAtualizar, idReceita);
     }
 
-    @DeleteMapping("/{idReceita}")
-    public ReceitaFormada deletarReceita(@PathVariable ("idReceita") Integer idReceita){
+    @DeleteMapping("/deletar/{idReceita}")
+    public ReceitaFormada deletarReceita(@PathVariable("idReceita") Integer idReceita) throws ObjetoNaoEncontradoException {
         return receitaService.deletarReceita(idReceita);
     }
-
-
-
-
-
-
-
-
-
 
 
 }
