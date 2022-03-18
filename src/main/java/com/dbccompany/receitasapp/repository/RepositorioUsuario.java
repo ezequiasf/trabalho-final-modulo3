@@ -12,12 +12,12 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Repository
-public class RepositorioUsuario implements RepositorioGenerico<Usuario,Integer> , Validar<Usuario, Integer> {
+public class RepositorioUsuario implements RepositorioGenerico<Usuario, Integer>, Validar<Usuario, Integer> {
 
     private final List<Usuario> usuariosBanco = new ArrayList<>();
     private final AtomicInteger COUNTER = new AtomicInteger();
 
-    public RepositorioUsuario (){
+    public RepositorioUsuario() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         Usuario u1 = Usuario.builder().id(COUNTER.incrementAndGet())
                 .nomeUsuario("Marcos Almeida")
@@ -63,9 +63,9 @@ public class RepositorioUsuario implements RepositorioGenerico<Usuario,Integer> 
 
     @Override
     public Usuario deletar(Integer idUser) throws ObjetoNaoEncontradoException {
-       Usuario usuarioDeletado = seExistirRetorne(idUser);
-       usuariosBanco.remove(idUser);
-       return usuarioDeletado;
+        Usuario usuarioDeletado = seExistirRetorne(idUser);
+        usuariosBanco.remove(idUser);
+        return usuarioDeletado;
     }
 
     @Override
@@ -73,7 +73,7 @@ public class RepositorioUsuario implements RepositorioGenerico<Usuario,Integer> 
         return usuariosBanco.stream()
                 .filter(usuario -> usuario.getId().equals(idUser))
                 .findFirst()
-                .orElseThrow(()-> new ObjetoNaoEncontradoException
+                .orElseThrow(() -> new ObjetoNaoEncontradoException
                         ("Não foi encontrado nenhum objeto com o id informado."));
     }
 }
