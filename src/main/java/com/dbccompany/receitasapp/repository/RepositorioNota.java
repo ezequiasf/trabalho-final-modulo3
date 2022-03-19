@@ -60,7 +60,7 @@ public class RepositorioNota implements RepositorioGenerico<Nota, Integer>, Vali
     @Override
     public Nota deletar(Integer idNota) throws ObjetoNaoEncontradoException {
         Nota n = seExistirRetorne(idNota);
-        notasBanco.remove(idNota.intValue());
+        notasBanco.remove(n);
         return n;
     }
 

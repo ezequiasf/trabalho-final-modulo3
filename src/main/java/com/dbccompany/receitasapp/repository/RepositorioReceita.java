@@ -79,7 +79,7 @@ public class RepositorioReceita implements RepositorioGenerico<Receita, Integer>
     @Override
     public Receita deletar(Integer idReceita) throws ObjetoNaoEncontradoException {
         Receita r = seExistirRetorne(idReceita);
-        receitasBanco.remove(idReceita.intValue());
+        receitasBanco.remove(r);
         return r;
     }
 

@@ -72,7 +72,7 @@ public class RepositorioIngrediente implements RepositorioGenerico<Ingrediente, 
     @Override
     public Ingrediente deletar(Integer idIngrediente) throws ObjetoNaoEncontradoException {
         Ingrediente i = seExistirRetorne(idIngrediente);
-        ingredientesBanco.remove(idIngrediente.intValue());
+        ingredientesBanco.remove(i);
         return i;
     }
 

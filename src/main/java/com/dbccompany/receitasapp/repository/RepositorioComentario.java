@@ -61,7 +61,7 @@ public class RepositorioComentario implements RepositorioGenerico<Comentario, In
     @Override
     public Comentario deletar(Integer idComentario) throws ObjetoNaoEncontradoException {
         Comentario c = seExistirRetorne(idComentario);
-        comentariosBanco.remove(idComentario.intValue());
+        comentariosBanco.remove(c);
         return c;
     }
 

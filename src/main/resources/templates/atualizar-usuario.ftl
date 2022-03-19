@@ -98,13 +98,10 @@
                                                             <td align="center" class="es-m-txt-c" style="padding:0;Margin:0;padding-top:10px;padding-bottom:15px"><h1 style="Margin:0;line-height:60px;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-size:50px;font-style:normal;font-weight:normal;color:#555555"><strong>atualizadoss!</strong></h1></td>
                                                         </tr>
                                                         <tr style="border-collapse:collapse">
-                                                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px">${nome}, suas alterações foram gravadas em nosso sistema!&nbsp;</p></td>
+                                                            <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:33px;color:#666666;font-size:22px">${nome}, suas alterações foram gravadas em nosso sistema!&nbsp;</p></td>
                                                         </tr>
                                                         <tr style="border-collapse:collapse">
-                                                            <td align="center" style="padding:0;Margin:0;padding-top:10px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><i>Com amor, time Receita app - DBC Company.</i></p></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="center" style="padding:0;Margin:0;padding-top:20px;padding-bottom:20px"><span class="es-button-border" style="border-style:solid;border-color:#333333;background:#F8EDEB;border-width:1px;display:inline-block;border-radius:0px;width:auto"><a href="https://viewstripo.email" class="es-button" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#333333;font-size:16px;border-style:solid;border-color:#F8EDEB;border-width:10px 20px 10px 20px;display:inline-block;background:#F8EDEB;border-radius:0px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:center"><!--[if !mso]><!-- --><img src="https://txbvbc.stripocdn.email/content/guids/CABINET_b37bdb761de9f175b15b99dcfc31c729/images/12301632400822776.png" alt="icon" width="16" style="display:inline-block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;vertical-align:middle;margin-right:10px" align="absmiddle"><!--<![endif]-->Pegar um cupom</a></span></td>
+                                                            <td align="center" style="padding:0;Margin:0;padding-top:10px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:23px;color:#666666;font-size:15px"><i>Com amor, time Receita app - DBC Company.</i></p></td>
                                                         </tr>
                                                     </table></td>
                                             </tr>
@@ -200,117 +197,6 @@
                                             </tr>
                                         </table><!--[if mso]></td></tr></table><![endif]--></td>
                                 </tr>
-                                <tr style="border-collapse:collapse">
-                                    <td align="left" style="padding:20px;Margin:0"><!--[if mso]><table style="width:560px" cellpadding="0" cellspacing="0"><tr><td style="width:290px" valign="top"><![endif]-->
-                                        <table cellpadding="0" cellspacing="0" class="es-left" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-                                            <tr style="border-collapse:collapse">
-                                                <td class="es-m-p20b" align="left" style="padding:0;Margin:0;width:290px">
-                                                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="https://viewstripo.email" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:12px"><img class="adapt-img p_image" src="https://txbvbc.stripocdn.email/content/guids/CABINET_b37bdb761de9f175b15b99dcfc31c729/images/78621632401015102.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="290"></a></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" class="es-m-txt-l" style="padding:0;Margin:0;padding-bottom:15px;padding-top:25px"><h2 style="Margin:0;line-height:43px;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-size:36px;font-style:normal;font-weight:normal;color:#555555"><em class="p_name">Grilled vegetables</em></h2></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0"><p class="p_description" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px">Malesuada proin libero nunc consequat interdum varius sit amet mattis. Erat imperdiet sed euismod nisi porta lorem mollis. Et tortor at risus viverra adipiscing at in. Diam phasellus vestibulum lorem.</p></td>
-                                                        </tr>
-                                                    </table></td>
-                                            </tr>
-                                        </table><!--[if mso]></td><td style="width:20px"></td><td style="width:250px" valign="top"><![endif]-->
-                                        <table cellpadding="0" cellspacing="0" class="es-right" align="right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
-                                            <tr style="border-collapse:collapse">
-                                                <td align="left" style="padding:0;Margin:0;width:250px">
-                                                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                        <tr class="es-mobile-hidden" style="border-collapse:collapse">
-                                                            <td align="center" height="270" style="padding:0;Margin:0"></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="right" class="es-m-txt-r" style="padding:0;Margin:0"><h1 style="Margin:0;line-height:60px;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-size:50px;font-style:normal;font-weight:normal;color:#555555"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#999999;font-size:68px" href="https://viewstripo.email">→</a></h1></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="right" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#999999;font-size:12px" href="https://viewstripo.email">SEE MORE</a></p></td>
-                                                        </tr>
-                                                    </table></td>
-                                            </tr>
-                                        </table><!--[if mso]></td></tr></table><![endif]--></td>
-                                </tr>
-                                <tr style="border-collapse:collapse">
-                                    <td align="left" style="Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;padding-bottom:40px">
-                                        <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                            <tr style="border-collapse:collapse">
-                                                <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
-                                                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="center" style="padding:0;Margin:0;padding-bottom:20px"><span class="es-button-border" style="border-style:solid;border-color:#333333;background:#F8EDEB;border-width:1px;display:inline-block;border-radius:0px;width:auto"><a href="https://viewstripo.email" class="es-button" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#333333;font-size:16px;border-style:solid;border-color:#F8EDEB;border-width:10px 20px 10px 20px;display:inline-block;background:#F8EDEB;border-radius:0px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:center">BOOK A TABLE</a></span></td>
-                                                        </tr>
-                                                    </table></td>
-                                            </tr>
-                                        </table></td>
-                                </tr>
-                                <tr style="border-collapse:collapse">
-                                    <td align="left" bgcolor="#fcd5ce" style="Margin:0;padding-left:20px;padding-right:20px;padding-top:40px;padding-bottom:40px;background-color:#fcd5ce"><!--[if mso]><table style="width:560px" cellpadding="0" cellspacing="0"><tr><td style="width:194px" valign="top"><![endif]-->
-                                        <table cellpadding="0" cellspacing="0" class="es-left" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-                                            <tr style="border-collapse:collapse">
-                                                <td class="es-m-p20b" align="left" style="padding:0;Margin:0;width:174px">
-                                                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0;padding-bottom:10px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><strong>INFO</strong></p></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#666666;font-size:12px" href="">About us</a></p></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#666666;font-size:12px" href="">Menu</a></p></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#666666;font-size:12px" href="">Contact</a></p></td>
-                                                        </tr>
-                                                    </table></td>
-                                                <td class="es-hidden" style="padding:0;Margin:0;width:20px"></td>
-                                            </tr>
-                                        </table><!--[if mso]></td><td style="width:145px" valign="top"><![endif]-->
-                                        <table cellpadding="0" cellspacing="0" class="es-left" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-                                            <tr style="border-collapse:collapse">
-                                                <td align="left" class="es-m-p20b" style="padding:0;Margin:0;width:145px">
-                                                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0;padding-bottom:10px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><strong>BLOG</strong></p></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#666666;font-size:12px" href="">About us</a></p></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#666666;font-size:12px" href="">Menu</a></p></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#666666;font-size:12px" href="">Contact</a></p></td>
-                                                        </tr>
-                                                    </table></td>
-                                            </tr>
-                                        </table><!--[if mso]></td><td style="width:20px"></td><td style="width:201px" valign="top"><![endif]-->
-                                        <table cellpadding="0" cellspacing="0" class="es-right" align="right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
-                                            <tr style="border-collapse:collapse">
-                                                <td align="left" class="es-m-p20b" style="padding:0;Margin:0;width:201px">
-                                                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:18px;color:#666666;font-size:12px"><strong>SOCIAL</strong></p></td>
-                                                        </tr>
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="left" style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px;font-size:0">
-                                                                <table cellpadding="0" cellspacing="0" class="es-table-not-adapt es-social" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                                    <tr style="border-collapse:collapse">
-                                                                        <td align="center" valign="top" style="padding:0;Margin:0;padding-right:15px"><a target="_blank" href="https://viewstripo.email." style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:12px"><img title="Facebook" src="https://txbvbc.stripocdn.email/content/assets/img/social-icons/logo-black/facebook-logo-black.png" alt="Fb" width="30" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
-                                                                        <td align="center" valign="top" style="padding:0;Margin:0;padding-right:15px"><a target="_blank" href="https://viewstripo.email." style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:12px"><img title="Twitter" src="https://txbvbc.stripocdn.email/content/assets/img/social-icons/logo-black/twitter-logo-black.png" alt="Tw" width="30" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
-                                                                        <td align="center" valign="top" style="padding:0;Margin:0;padding-right:15px"><a target="_blank" href="https://viewstripo.email." style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:12px"><img title="Instagram" src="https://txbvbc.stripocdn.email/content/assets/img/social-icons/logo-black/instagram-logo-black.png" alt="Inst" width="30" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
-                                                                        <td align="center" valign="top" style="padding:0;Margin:0"><a target="_blank" href="https://viewstripo.email." style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:12px"><img title="Youtube" src="https://txbvbc.stripocdn.email/content/assets/img/social-icons/logo-black/youtube-logo-black.png" alt="Yt" width="30" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
-                                                                    </tr>
-                                                                </table></td>
-                                                        </tr>
-                                                    </table></td>
-                                            </tr>
-                                        </table><!--[if mso]></td></tr></table><![endif]--></td>
-                                </tr>
                             </table></td>
                     </tr>
                 </table>
@@ -318,19 +204,6 @@
                     <tr style="border-collapse:collapse">
                         <td class="es-info-area" align="center" style="padding:0;Margin:0">
                             <table class="es-content-body" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
-                                <tr style="border-collapse:collapse">
-                                    <td align="left" style="Margin:0;padding-bottom:10px;padding-top:20px;padding-left:20px;padding-right:20px">
-                                        <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                            <tr style="border-collapse:collapse">
-                                                <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
-                                                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                        <tr style="border-collapse:collapse">
-                                                            <td align="center" class="es-infoblock" style="padding:0;Margin:0;line-height:14px;font-size:12px;color:#CCCCCC"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:14px;color:#CCCCCC;font-size:12px">You are receiving this email because you asked us about regular newsletter.</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:14px;color:#CCCCCC;font-size:12px">You can&nbsp;<a target="_blank" href="https://viewstripo.email/" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#CCCCCC;font-size:12px">unsubscribe</a>&nbsp;from these emails.</p></td>
-                                                        </tr>
-                                                    </table></td>
-                                            </tr>
-                                        </table></td>
-                                </tr>
                                 <tr style="border-collapse:collapse">
                                     <td align="left" style="Margin:0;padding-top:10px;padding-bottom:20px;padding-left:20px;padding-right:20px">
                                         <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
