@@ -1,9 +1,8 @@
 package com.dbccompany.receitasapp.utils;
 
+import com.dbccompany.receitasapp.enumTemplates.TemplateSituations;
 import com.dbccompany.receitasapp.exceptions.EmailSimplesException;
 import com.dbccompany.receitasapp.templateObjects.TemplateObject;
-import com.dbccompany.receitasapp.enumTemplates.TemplateSituations;
-import com.dbccompany.receitasapp.templateObjects.UsuarioTemplate;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -120,12 +119,7 @@ public class EmailUtil {
 
 
     private String construirTemplate(TemplateObject templateObj, TemplateSituations situacao) throws IOException, TemplateException {
-        Template template;
-        String html = null;
-        if (templateObj instanceof UsuarioTemplate) {
-            template = configuracaoTemplate.getTemplate(templateObj.getTemplate(situacao));
-            html = FreeMarkerTemplateUtils.processTemplateIntoString(template, templateObj.getDADOS());
-        }
-        return html;
+        Template template = configuracaoTemplate.getTemplate(templateObj.getTemplate(situacao));
+        return FreeMarkerTemplateUtils.processTemplateIntoString(template, templateObj.getDADOS());
     }
 }
