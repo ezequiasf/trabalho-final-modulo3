@@ -1,5 +1,6 @@
 package com.dbccompany.receitasapp.templateObjects;
 
+import com.dbccompany.receitasapp.enumTemplates.TemplateSituations;
 import lombok.Getter;
 import lombok.Setter;
 

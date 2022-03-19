@@ -2,7 +2,7 @@ package com.dbccompany.receitasapp.utils;
 
 import com.dbccompany.receitasapp.exceptions.EmailSimplesException;
 import com.dbccompany.receitasapp.templateObjects.TemplateObject;
-import com.dbccompany.receitasapp.templateObjects.TemplateSituations;
+import com.dbccompany.receitasapp.enumTemplates.TemplateSituations;
 import com.dbccompany.receitasapp.templateObjects.UsuarioTemplate;
 import freemarker.template.Configuration;
 import freemarker.template.Template;

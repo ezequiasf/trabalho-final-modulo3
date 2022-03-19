@@ -2,14 +2,14 @@ package com.dbccompany.receitasapp.templateObjects;
 
 
 import com.dbccompany.receitasapp.dto.UsuarioDTO;
+import com.dbccompany.receitasapp.enumTemplates.SituacoesUsuario;
+import com.dbccompany.receitasapp.enumTemplates.TemplateSituations;
 import lombok.Setter;
 
 import java.util.HashMap;
 
 @Setter
 public class UsuarioTemplate extends TemplateObject{
-
-    private String TEMPLATE_CADASTRO = "cadastro-usuario.ftl";
 
     public UsuarioTemplate (UsuarioDTO usuarioDTO){
         HashMap<String,Object> dadosUsuario = new HashMap<>();
@@ -21,10 +21,6 @@ public class UsuarioTemplate extends TemplateObject{
 
     @Override
     public String getTemplate (TemplateSituations situacao){
-        String template = "";
-        if (situacao == TemplateSituations.CADASTRO) {
-            template = TEMPLATE_CADASTRO;
-        }
-        return template;
+        return ((SituacoesUsuario)situacao).getTemplateName();
     }
 }
