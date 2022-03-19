@@ -1,7 +1,9 @@
 package com.dbccompany.receitasapp.utils;
 
-import com.dbccompany.receitasapp.entity.Usuario;
 import com.dbccompany.receitasapp.exceptions.EmailSimplesException;
+import com.dbccompany.receitasapp.templateObjects.TemplateObject;
+import com.dbccompany.receitasapp.templateObjects.TemplateSituations;
+import com.dbccompany.receitasapp.templateObjects.UsuarioTemplate;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -17,8 +19,6 @@ import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
 
 @Component
 @Slf4j
@@ -28,7 +28,6 @@ public class EmailUtil {
     private JavaMailSender carteiro;
     @Autowired
     private Configuration configuracaoTemplate;
-    private String template;
 
     public EmailUtil() {
         try {
@@ -36,15 +35,6 @@ public class EmailUtil {
         } catch (IOException e) {
             log.error("Caminho do diretório para templates está errado.\n" + e.getMessage());
         }
-    }
-
-    public EmailUtil setTemplate(String template) {
-        this.template = template;
-        return this;
-    }
-
-    public String getTemplate() {
-        return this.template;
     }
 
     public static EmailUtil getEmailUtil() {
@@ -102,19 +92,16 @@ public class EmailUtil {
         }
     }
 
-    public void enviarEmailTemplate(String remetente, String destinatario, String assunto, Object entidade) {
+    public void enviarEmailTemplate(String remetente
+            , String destinatario, String assunto, TemplateObject templateObject, TemplateSituations situacao) {
         try {
             MimeMessageHelper helper = construtorAuxiliarMimeMessage(remetente, destinatario, assunto);
-            helper.setText(construirTemplate(entidade), true);
+            helper.setText(construirTemplate(templateObject, situacao), true);
             carteiro.send(helper.getMimeMessage());
         } catch (MessagingException | IOException | TemplateException e) {
             e.printStackTrace();
         }
     }
-
-    /*
-        Métodos private para auxiliar na construção das mensagens.
-     */
 
     private MimeMessageHelper construtorAuxiliarMimeMessage(String remetente, String destinatario, String assunto) {
         MimeMessage mimeMessage = carteiro.createMimeMessage();
@@ -132,17 +119,13 @@ public class EmailUtil {
     }
 
 
-    private String construirTemplate(Object entidade) throws IOException, TemplateException {
-        Map<String, Object> dados = new HashMap<>();
-
-        //>>>>>>>>> If aninhado para seleção de entidades e templates
-        if (entidade instanceof Usuario) {
-            if (this.getTemplate().contains("cadastro")) {
-                dados.put("nome", "meu nome");
-            }
+    private String construirTemplate(TemplateObject templateObj, TemplateSituations situacao) throws IOException, TemplateException {
+        Template template;
+        String html = null;
+        if (templateObj instanceof UsuarioTemplate) {
+            template = configuracaoTemplate.getTemplate(templateObj.getTemplate(situacao));
+            html = FreeMarkerTemplateUtils.processTemplateIntoString(template, templateObj.getDADOS());
         }
-        //>>>>>>>>>>>>>>>>>>>>>
-        Template template = configuracaoTemplate.getTemplate(this.getTemplate());
-        return FreeMarkerTemplateUtils.processTemplateIntoString(template, dados);
+        return html;
     }
 }
