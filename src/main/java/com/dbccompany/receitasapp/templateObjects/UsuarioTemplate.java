@@ -15,6 +15,7 @@ public class UsuarioTemplate extends TemplateObject{
         HashMap<String,Object> dadosUsuario = new HashMap<>();
         dadosUsuario.put("nome", usuarioDTO.getNomeUsuario());
         dadosUsuario.put("email", usuarioDTO.getEmail());
+        dadosUsuario.put("emailEmpresa", this.getEmailEmpresa());
         this.setDADOS(dadosUsuario);
     }
 

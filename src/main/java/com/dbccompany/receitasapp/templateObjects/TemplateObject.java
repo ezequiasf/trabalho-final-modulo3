@@ -9,5 +9,6 @@ import java.util.HashMap;
 @Getter
 public abstract class TemplateObject {
     private HashMap<String,Object> DADOS = new HashMap<>();
+    private final String emailEmpresa = "ezequias.barros@dbccompany.com.br";
     public abstract String getTemplate(TemplateSituations situacao);
 }
