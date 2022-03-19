@@ -6,8 +6,8 @@ import com.dbccompany.receitasapp.templateObjects.TemplateObject;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -20,25 +20,12 @@ import javax.mail.internet.MimeMessage;
 import java.io.*;
 
 @Component
+@RequiredArgsConstructor
 @Slf4j
 public class EmailUtil {
 
-    @Autowired
-    private JavaMailSender carteiro;
-    @Autowired
-    private Configuration configuracaoTemplate;
-
-    public EmailUtil() {
-        try {
-            configuracaoTemplate.setDirectoryForTemplateLoading(new File("src/main/resources/templates"));
-        } catch (IOException e) {
-            log.error("Caminho do diretório para templates está errado.\n" + e.getMessage());
-        }
-    }
-
-    public static EmailUtil getEmailUtil() {
-        return new EmailUtil();
-    }
+    private final JavaMailSender carteiro;
+    private final Configuration configuracaoTemplate;
 
     public void enviarEmailSimples(String remetente, String destinatario,
                                    String assunto, String mensagem) {
@@ -119,6 +106,7 @@ public class EmailUtil {
 
 
     private String construirTemplate(TemplateObject templateObj, TemplateSituations situacao) throws IOException, TemplateException {
+        configuracaoTemplate.setDirectoryForTemplateLoading(new File("src/main/resources/templates"));
         Template template = configuracaoTemplate.getTemplate(templateObj.getTemplate(situacao));
         return FreeMarkerTemplateUtils.processTemplateIntoString(template, templateObj.getDADOS());
     }

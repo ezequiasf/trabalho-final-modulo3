@@ -55,8 +55,8 @@ public class RepositorioUsuario implements RepositorioGenerico<Usuario, Integer>
     public Usuario atualizar(Usuario usuarioNovo, Integer idUser) throws ObjetoNaoEncontradoException {
         Usuario usuarioExistente = seExistirRetorne(idUser);
         usuarioExistente.setNomeUsuario(usuarioNovo.getNomeUsuario());
-        usuarioExistente.setSenha(usuarioExistente.getSenha());
-        usuarioExistente.setEmail(usuarioExistente.getEmail());
+        usuarioExistente.setSenha(usuarioNovo.getSenha());
+        usuarioExistente.setEmail(usuarioNovo.getEmail());
         usuarioExistente.setDataNascimento(usuarioNovo.getDataNascimento());
         return usuarioExistente;
     }

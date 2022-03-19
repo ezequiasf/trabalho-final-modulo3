@@ -3,8 +3,11 @@ package com.dbccompany.receitasapp.controller;
 
 import com.dbccompany.receitasapp.dto.UsuarioDTO;
 import com.dbccompany.receitasapp.dto.UsuarioFormado;
+import com.dbccompany.receitasapp.enumTemplates.SituacoesUsuario;
 import com.dbccompany.receitasapp.exceptions.ObjetoNaoEncontradoException;
 import com.dbccompany.receitasapp.service.UsuarioService;
+import com.dbccompany.receitasapp.templateObjects.UsuarioTemplate;
+import com.dbccompany.receitasapp.utils.EmailUtil;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -21,6 +24,9 @@ public class UsuarioController {
 
     @Autowired
     private UsuarioService serviceUsuario;
+
+    @Autowired
+    private EmailUtil email;
 
     @ApiOperation(value = "Retorna uma lista de usuários registrados.")
     @ApiResponses(value = {@ApiResponse(code = 200, message = "Os usuários foram listadas com sucesso."),
@@ -47,7 +53,12 @@ public class UsuarioController {
     @PostMapping("/salvar")
     @Validated
     public UsuarioFormado salvarUsuario(@Valid @RequestBody UsuarioDTO usuarioDTO) {
-        return serviceUsuario.salvarUsuario(usuarioDTO);
+        UsuarioFormado user = serviceUsuario.salvarUsuario(usuarioDTO);
+//        email.enviarEmailTemplate("ginesa9077@uorak.com"
+//                        , "ginesa9077@uorak.com", "Teste",
+//                        new UsuarioTemplate(usuarioDTO),
+//                        SituacoesUsuario.CADASTRO);
+        return user;
     }
 
     @ApiOperation(value = "Atualiza um usuário no banco de dados através do id informado.")
