@@ -13,6 +13,7 @@
 
 
     <!--Info da aplicação-->
+
     <groupId>com.dbccompany</groupId>
     <artifactId>receitas-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -21,12 +22,14 @@
 
 
     <!--Propriedades e versão do java-->
+
     <properties>
         <java.version>11</java.version>
     </properties>
 
 
     <!--Dependências-->
+
     <dependencies>
 
         <dependency>
@@ -87,10 +90,60 @@
             <version>3.0.0</version>
         </dependency>
 
+        <!-- Depêndencias do feign-->
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-jackson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-slf4j</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-gson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+        </dependency>
+
+
     </dependencies>
 
 
+    <!--Gerenciador spring cloud-->
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2020.0.4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+
     <!--Build dos plugins-->
+
     <build>
         <plugins>
             <plugin>
