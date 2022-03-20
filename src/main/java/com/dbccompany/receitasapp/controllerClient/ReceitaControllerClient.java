@@ -2,6 +2,7 @@ package com.dbccompany.receitasapp.controllerClient;
 
 import com.dbccompany.receitasapp.client.DadosReceita;
 import com.dbccompany.receitasapp.dtoClient.ReceitaClienteDTO;
+import com.dbccompany.receitasapp.utils.GerarReceita;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.json.JSONObject;
@@ -29,15 +30,15 @@ public class ReceitaControllerClient {
     private ObjectMapper mapper;
 
     @GetMapping
-    public LinkedHashMap<String, Object> retornaReceitasPorIng(@RequestParam String q){
+    public List<ReceitaClienteDTO> retornaReceitasPorIng(@RequestParam String q){
         HashMap<String,String> params = new HashMap<>();
         params.put("app_id", "907ae45b");
         params.put("app_key", "4957ce0e972732121fc24e526e856d9e");
         params.put("type", "public");
         params.put("q", q);
         LinkedHashMap<String, Object> linked =  dadosCliente.recuperarReceitaPorIng(params);
-        JSONObject json = new JSONObject(linked);
-        System.out.println(json.getJSONObject("_links"));
-        return linked;
+
+        GerarReceita gerador = new GerarReceita();
+        return gerador.gerarLista(linked);
     }
 }

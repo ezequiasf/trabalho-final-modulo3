@@ -13,8 +13,6 @@ import java.util.HashMap;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class UsuarioTemplate extends TemplateObject{
 
     public UsuarioTemplate (UsuarioDTO usuarioDTO){

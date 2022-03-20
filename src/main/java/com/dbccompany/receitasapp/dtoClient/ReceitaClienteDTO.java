@@ -1,22 +1,21 @@
 package com.dbccompany.receitasapp.dtoClient;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class ReceitaClienteDTO {
     private String label;
-    private String urlImg;
-    private String[] dietLabels;
-    private String[] healthLabels;
-    private String[] ingredients;
+    private String image;
+    private List<String> dietLabels;
+    private List<String> healthLabels;
+    private List<String> ingredientLines;
     private BigDecimal calories;
-    private String mealType;
+    private List<String> mealType;
 }
