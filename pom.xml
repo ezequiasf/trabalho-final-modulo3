@@ -122,6 +122,12 @@
             <artifactId>feign-httpclient</artifactId>
         </dependency>
 
+        <!--Biblioteca para trabalhar com JSON-->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20211205</version>
+        </dependency>
 
     </dependencies>
 
