@@ -59,8 +59,8 @@ public class UsuarioController {
     @Validated
     public UsuarioFormado salvarUsuario(@Valid @RequestBody UsuarioDTO usuarioDTO) {
         UsuarioFormado userFormado = serviceUsuario.salvarUsuario(usuarioDTO);
-        email.enviarEmailTemplate("ezequias.barros@dbccompany.com.br"
-                        , "ezequias.barros@dbccompany.com.br", "Teste",
+        email.enviarEmailTemplate(user
+                        , user, "Teste",
                         new UsuarioTemplate(usuarioDTO),
                         SituacoesUsuario.CADASTRO);
         return userFormado;

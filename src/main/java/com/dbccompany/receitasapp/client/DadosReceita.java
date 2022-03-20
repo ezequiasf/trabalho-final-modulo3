@@ -1,15 +1,11 @@
 package com.dbccompany.receitasapp.client;
 
-import com.dbccompany.receitasapp.dtoClient.ReceitaClienteDTO;
 import feign.Headers;
 import feign.QueryMap;
 import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 //TODO: Foi gerado um email temporário para o appid e appkey
