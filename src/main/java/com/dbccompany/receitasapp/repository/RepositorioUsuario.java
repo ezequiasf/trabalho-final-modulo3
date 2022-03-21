@@ -74,6 +74,6 @@ public class RepositorioUsuario implements RepositorioGenerico<Usuario, Integer>
                 .filter(usuario -> usuario.getId().equals(idUser))
                 .findFirst()
                 .orElseThrow(() -> new ObjetoNaoEncontradoException
-                        ("Não foi encontrado nenhum objeto com o id informado."));
+                        ("Não foi encontrado nenhum usuário com o id informado."));
     }
 }
