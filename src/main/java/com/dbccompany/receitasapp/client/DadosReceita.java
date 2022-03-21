@@ -8,7 +8,6 @@ import org.springframework.cloud.openfeign.FeignClient;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-//TODO: Foi gerado um email temporário para o appid e appkey
 //Para gerar email de testes >>> https://www.invertexto.com/gerador-email-temporario
 //Documentação da api e site para logar >> https://developer.edamam.com/
 
@@ -17,5 +16,5 @@ import java.util.Map;
 public interface DadosReceita {
 
     @RequestLine("GET /")
-    LinkedHashMap<String,Object> recuperarReceitaPorIng(@QueryMap Map<String,String> params);
+    LinkedHashMap<String, Object> recuperarReceitaPorIng(@QueryMap Map<String, String> params);
 }

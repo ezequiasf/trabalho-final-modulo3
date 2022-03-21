@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class IngredienteFormado extends IngredienteDTO{
+public class IngredienteFormado extends IngredienteDTO {
     private Integer id;
     private Integer idReceita;
 }

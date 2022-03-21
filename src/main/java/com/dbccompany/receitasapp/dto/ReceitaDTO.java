@@ -20,7 +20,7 @@ public class ReceitaDTO {
     private String nomeReceita;
 
     @NotBlank(message = "O modo de preparo deve ser informado.")
-    @Size(min = 15, max = 300, message = "O modo de preparo deve estar entre 15 e 300 caracteres.")
+    @Size(min = 1, max = 300, message = "O modo de preparo deve estar entre 15 e 300 caracteres.")
     private String modoPreparo;
 
     @NotNull(message = "O tempo de preparo deve ser informado.")

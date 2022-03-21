@@ -41,5 +41,4 @@ public class GerarReceita {
         return arr.toList().stream().map(obj -> (String) obj)
                 .collect(Collectors.toList());
     }
-
 }

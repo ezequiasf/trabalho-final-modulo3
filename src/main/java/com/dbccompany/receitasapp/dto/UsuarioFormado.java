@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class UsuarioFormado extends UsuarioDTO{
+public class UsuarioFormado extends UsuarioDTO {
     private Integer id;
 }

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class ComentarioFormado extends ComentarioDTO{
+public class ComentarioFormado extends ComentarioDTO {
     private Integer idComentario;
     private Integer idUsuario;
 }

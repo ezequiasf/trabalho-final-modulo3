@@ -23,19 +23,19 @@ public class NotaService {
     @Autowired
     private ObjectMapper objectMapper;
 
-    public List<NotaFormada> lerTodasNotas (){
+    public List<NotaFormada> lerTodasNotas() {
         log.info("Chamada de método service:: Ler todas as notas.");
         return converterLista(repositorioNota.lerTodos());
     }
 
-    public NotaFormada encontrarPorId (Integer idNota) throws ObjetoNaoEncontradoException {
+    public NotaFormada encontrarPorId(Integer idNota) throws ObjetoNaoEncontradoException {
         log.info("Chamada de método service:: Encontrar por id.");
         Nota n = repositorioNota.encontrarPorId(idNota);
         log.info("Feita verificação do ID.");
         return objectMapper.convertValue(n, NotaFormada.class);
     }
 
-    public NotaFormada salvar (NotaDTO notaDTO, Integer idUsuario){
+    public NotaFormada salvar(NotaDTO notaDTO, Integer idUsuario) {
         log.info("Chamada de método service:: Salvar notas.");
         Nota n = objectMapper.convertValue(notaDTO, Nota.class);
         log.info("Objeto DTO convertido para tipo Nota.");
@@ -45,7 +45,7 @@ public class NotaService {
         return objectMapper.convertValue(n2, NotaFormada.class);
     }
 
-    public NotaFormada atualizar (NotaDTO notaDTO, Integer idNota) throws ObjetoNaoEncontradoException {
+    public NotaFormada atualizar(NotaDTO notaDTO, Integer idNota) throws ObjetoNaoEncontradoException {
         log.info("Chamada de método service:: Atualizar notas.");
         Nota n = objectMapper.convertValue(notaDTO, Nota.class);
         log.info("Objeto DTO convertido para tipo Nota.");
@@ -54,14 +54,14 @@ public class NotaService {
         return objectMapper.convertValue(n2, NotaFormada.class);
     }
 
-    public NotaFormada deletar (Integer idNota) throws ObjetoNaoEncontradoException {
+    public NotaFormada deletar(Integer idNota) throws ObjetoNaoEncontradoException {
         log.info("Chamada de método service:: Deletar notas.");
         Nota n = repositorioNota.deletar(idNota);
         log.info("Nota deletada no repositório.");
         return objectMapper.convertValue(n, NotaFormada.class);
     }
 
-    public List<NotaFormada> encontrarNotasReceita (Integer idReceita) throws ObjetoNaoEncontradoException {
+    public List<NotaFormada> encontrarNotasReceita(Integer idReceita) throws ObjetoNaoEncontradoException {
         log.info("Chamada de método service:: Encontrar notas por receita.");
         return converterLista(repositorioNota.encontrarNotasReceita(idReceita));
     }

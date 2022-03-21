@@ -89,7 +89,7 @@ public class RepositorioReceita implements RepositorioGenerico<Receita, Integer>
                     .filter(r -> r.getIdUsuario().equals(id))
                     .collect(Collectors.toList());
             if (receitas.isEmpty()) {
-                throw new ObjetoNaoEncontradoException("Não existe este usuário no banco.");
+                throw new ObjetoNaoEncontradoException("Não existe receitas para este usuário no banco.");
             }
             return receitas;
         });

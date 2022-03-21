@@ -18,12 +18,10 @@ public class SimpleErrorDecode implements ErrorDecoder {
 
         try {
             String bodyString = IOUtils.toString(body.asInputStream());
-            switch (response.status()) {
-                case 400:
-                    return new ObjetoNaoEncontradoException(bodyString);
-                default:
-                    return new Exception("Generic error");
+            if (response.status() == 400) {
+                return new ObjetoNaoEncontradoException(bodyString);
             }
+            return new Exception("Generic error");
         } catch (IOException e) {
             e.printStackTrace();
             return e;

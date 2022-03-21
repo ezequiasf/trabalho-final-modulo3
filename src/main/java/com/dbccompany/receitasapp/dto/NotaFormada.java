@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class NotaFormada extends NotaDTO{
+public class NotaFormada extends NotaDTO {
     private Integer idNota;
     private Integer idUsuario;
 }
