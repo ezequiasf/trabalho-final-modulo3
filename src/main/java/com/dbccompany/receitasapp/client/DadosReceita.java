@@ -8,9 +8,6 @@ import org.springframework.cloud.openfeign.FeignClient;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-//Para gerar email de testes >>> https://www.invertexto.com/gerador-email-temporario
-//Documentação da api e site para logar >> https://developer.edamam.com/
-
 @FeignClient(value = "Receitas", url = "https://api.edamam.com/api/recipes/v2")
 @Headers("Content-type: application/json")
 public interface DadosReceita {

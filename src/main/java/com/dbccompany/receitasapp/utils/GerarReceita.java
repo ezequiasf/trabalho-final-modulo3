@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 public class GerarReceita {
 
     public List<ReceitaClienteDTO> gerarLista(Map<String, Object> jsonResponse) {
-        //>>>>  Setup inicial
+
         JSONObject jsonTotal = new JSONObject(jsonResponse);
         List<ReceitaClienteDTO> receitas = new ArrayList<>();
         JSONArray arrHits = jsonTotal.getJSONArray("hits");
@@ -26,7 +26,7 @@ public class GerarReceita {
             ReceitaClienteDTO dto = ReceitaClienteDTO.builder()
                     .label(recipeObj.getString("label"))
                     .image(recipeObj.getString("image"))
-                    .calories(new BigDecimal(recipeObj.getDouble("calories")))
+                    .calories(BigDecimal.valueOf(recipeObj.getDouble("calories")))
                     .mealType(convertJSONArray(recipeObj.getJSONArray("mealType")))
                     .ingredientLines(convertJSONArray(recipeObj.getJSONArray("ingredientLines")))
                     .dietLabels(convertJSONArray(recipeObj.getJSONArray("dietLabels")))
